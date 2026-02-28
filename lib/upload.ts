@@ -1,5 +1,5 @@
 import { api } from './api';
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'https://api.aakodessewa.com/:4000/api/v1';
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'https://api.aakodessewa.com/api/v1';
 
 export async function uploadImage(file: File): Promise<string> {
   const formData = new FormData();

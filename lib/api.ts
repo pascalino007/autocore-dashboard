@@ -1,4 +1,4 @@
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'https://api.aakodessewa.com/:4000/api/v1';
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'https://api.aakodessewa.com/api/v1';
 
 // ── Token Management ─────────────────────────────────────
 
