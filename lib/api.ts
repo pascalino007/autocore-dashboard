@@ -40,6 +40,7 @@ async function refreshAccessToken(): Promise<string | null> {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ refreshToken: tokens.refreshToken }),
+      credentials: 'include',
     });
     if (!res.ok) { clearTokens(); return null; }
     const data = await res.json();
